@@ -193,21 +193,25 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+
 /*beginning of media queries */
+
+
 /*tablet*/
+
   @media(max-width:800px){
     /*header*/
     .container{
       margin-left: 15px;
       margin-right:15px;
-      background: yellow;
-     
     }
+
     header{
       display:flex;
       flex-direction: column;
       align-items: center;
   }
+
     header nav {
       width: 100%;
       order:2;
@@ -222,6 +226,7 @@ footer {
       color: gray;
       text-decoration: none;
     }
+
     header .logo {
       margin:auto;
       order:1;
@@ -244,13 +249,14 @@ footer {
 
 
 /*phone*/
-  @media(max-width:500px){
 
-    .container{
-      background: green;
-      margin-left: 10px;
-      margin-right:10px;
+  @media(max-width:500px){
+      .container{
+        padding: 0;
+      margin-left: 5px;
+      margin-right:5px;
     }
+
     /*header navigation*/
     header nav {
       flex-direction: column;
@@ -259,32 +265,21 @@ footer {
     header .logo{
       margin-bottom: -20px;
     }
+
     header nav a:nth-child(1){
       text-align: center;
       margin:0;
       border-top:2px solid grey;
       border-bottom:2px solid grey;
+      padding:12px;
     }
-    header nav a:nth-child(2){
+    header nav a{
       text-align: center;
       margin:0;
       border-bottom:2px solid grey;
+      padding: 12px;
     }
-    header nav a:nth-child(3){
-      text-align: center;
-      margin:0;
-      border-bottom:2px solid grey;
-    }
-    header nav a:nth-child(4){
-      text-align: center;
-      margin:0;
-      border-bottom:2px solid grey;
-    }
-    header nav a:nth-child(5){
-      text-align: center;
-      margin:0;
-      border-bottom:2px solid grey;
-    }
+
     header nav a:nth-child(6){
       text-align: center;
       margin:0;
@@ -295,13 +290,16 @@ footer {
     .main-content .top-content{
       flex-direction: column;
     }
+
     .main-content .top-content .text-content{
       width: 100%;
       margin-right: 0px;
     }
+
    .top-content .text-content:nth-child(2){
      margin-top:35px;
    }
+
    .bottom-content{
      flex-direction: column;
    }
